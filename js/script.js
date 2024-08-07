@@ -8,6 +8,10 @@ document.addEventListener('DOMContentLoaded', function () {
       section = document.getElementById('sejarah-desa');
   } else if (pathname.includes('pemerintah.html')) {
       section = document.getElementById('struktur-pemerintahan');
+  } else if (pathname.includes('produkdesa.html')){
+    section = document.getElementById('produk-desa')
+  } else if (pathname.includes('potensidesa.html')) {
+    section = document.getElementById('potensi-desa')
   }
 
   if (section) {

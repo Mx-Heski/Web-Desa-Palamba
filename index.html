@@ -28,9 +28,9 @@
             <p><i class="fa-solid fa-angle-down"></i></p>
           </div>
           <div class="profile-menu">
-            <a href="#sejarah-desa" class="navbar-link">Sejarah</a>
-            <a href="#visi-misi" class="navbar-link">Visi dan Misi</a>
-            <a href="#potensi-desa" class="navbar-link">Potensi Desa</a>
+            <a href="./index.html#sejarah-desa" class="navbar-link">Sejarah</a>
+            <a href="./index.html#visi-misi" class="navbar-link">Visi dan Misi</a>
+            <a href="./index.html#potensi-desa" class="navbar-link">Potensi Desa</a>
           </div>
         </div>
         <div class="navbar-link nav-toggle">
@@ -46,35 +46,35 @@
             >
           </div>
         </div>
-        <a href="#village-product" class="navbar-link">Produk Desa</a>
+        <a href="./produkdesa.html" class="navbar-link">Produk Desa</a>
       </nav>
     </header>
 
-    <section class="home">
-      <!-- <img src="./img/bg.jpeg" alt="Background Image" class="home-background" /> -->
-      <div class="video-background">
-        <video autoplay loop muted playsinline>
-            <source src="video/video.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-      <div class="home-content">
-        <h2 class="home-title" >Selamat Datang di Website Desa Palamba</h2>
-        <p class="home-description">
-          Kecamatan Langowan Selatan, Kabupaten Minahasa, Provinsi Sulawesi
-          Utara
-        </p>
-        <a href="#sejarah-desa" class="home-button"
-          >Selengkapnya <i class="fa-solid fa-arrow-right"></i
-        ></a>
+    <section class="home" id="beranda">
+      <div class="c">
+          <video autoplay loop muted playsinline class="home-background">
+              <source src="video/video.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+          </video>
+          <div class="home-overlay"></div>
+          <div class="home-content">
+              <h2 class="home-title">Selamat Datang di Website Desa Palamba</h2>
+              <p class="home-description">
+                  Kecamatan Langowan Selatan, Kabupaten Minahasa, Provinsi Sulawesi
+                  Utara
+              </p>
+              <a href="#sejarah-desa" class="home-button">Selengkapnya <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
       </div>
-    </section>
+  </section>
+  
 
     <section class="profile">
       <div class="profile-section history" id="sejarah-desa">
         <div class="profile-section-text" data-aos="fade-down">
           <h2 class="section-title">Sejarah Desa Palamba</h2>
           <p class="content-text">
-            Dalam tutur masyarakat, penduduk daerah ini sebenarnya dahulu berasal dari tiga pemukiman tua di Minahasa. Palamba, Temboan dan Rumbia. Roong(kampung) Palamba kini diyakini merupakan pemukiman paling tua di Langowan. Salah satu bukti, sejumlah situs sejarah seperti Waruga Toar Lumimuut (makam tua yang hanya bisa ditemui di Minahasa) dan penanda-penanda kehidupan awal di roong tersebut yang masih berdiri kokoh hingga saat ini.
+            Dalam tutur masyarakat, penduduk daerah ini sebenarnya dahulu berasal dari tiga pemukiman tua di Minahasa. Palamba, Temboan dan Rumbia. Roong(kampung) Palamba kini diyakini merupakan pemukiman paling tua di Langowan. Salah satu bukti, sejumlah situs sejarah seperti Waruga (makam tua yang hanya bisa ditemui di Minahasa) dan penanda-penanda kehidupan awal di roong tersebut yang masih berdiri kokoh hingga saat ini.
             "Data-data yang ada di desa-desa di Langowan kini menyebutkan,Roong Palamba telah ditempati sejak tahun 1500an. Tapi ia nanti berdiri menjadi sebuah negeri yang dipimpin seorang Tonaas (Pemimpin negeri) pada tahun 1600-an. Sejarah kampung-kampung kita di Langowan merujuk dari daerah sana (Palamba) sebagai awal leluhur kita, sebelum tumani (pindah, menyebar dan mendirikan pemukiman baru) dan mendirikan pemukiman-pemukiman di pusat Langowan sekarang," ujar Yonatan Kembuan, tou (orang) Minahasa asal Roong Lowian, Langowan, yang aktif di gerakan budaya Mawale Culture Center. Berbagai kisah di masyarakat menyebutkan, Roong Palamba adalah salah satu tempat yang telah dihuni pasca peristiwa "pembagian"di Watu Pinawetengan. Situs sejarah di Minahasa yang menjadi tempat pembagian wilayah awohan (wilayah tempat tinggal, garapan dan perburuan.
           </p>
           <br>
@@ -90,9 +90,25 @@
           </p>
         </div>
         <div class="history-section-image" data-aos="fade-up">
-          <img src="./img/bg5.jpg" class="history-image">
-          <img src="./img/Waruga.jpg" class="history-image">
+          <figure>
+            <img src="./img/bg5.jpg" class="history-image">
+            <figcaption>Potret Desa Palamba</figcaption>
+          </figure>
+
+          <figure>
+            <img src="./img/Waruga.jpg" class="history-image">
+            <figcaption>Waruga Toar Lumimuut yang berada di Desa Palamba</figcaption>
+          </figure>
+
+          <figure>
+            <img src="./img/waruga1.jpg" class="history-image">
+            <figcaption>Sebuah waruga tampak masih berdiri kokoh di depan gedung Gereja GMIM Elim Palamba.</figcaption>
+          </figure>
+
+
+          
         </div>
+
       </div>
       <div class="profile-section vision-mission" id="visi-misi">
         <div class="vision" data-aos="fade-right">
@@ -148,11 +164,10 @@
       </div>
       <div class="profile-section potency" id="potensi-desa">
         <div class="content">
-          
           <h2 class="section-title">Potensi Desa Palamba</h2>
           <p class="profile-section-subtitle">Desa Palamba memiliki sejumlah potensi alam yang dapat dikembangkan</p>
           <p class="profile-section-text">Lihat potensi dari desa dari berbagai sektor seperti pertanian, perkebunan, peternakan, dan pariwisata.</p>
-          <a href="#" class="home-button" data-aos="bounce">Selengkapnya <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="./potensidesa.html" class="home-button" data-aos="bounce">Selengkapnya <i class="fa-solid fa-arrow-right"></i></a>
         </div>
       </div>
 
