@@ -40,3 +40,25 @@ dropdownHeaders.forEach ( header => {
     dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block'
   })
 })
+
+const navbarLinks = document.querySelector('.navbar-links');
+const burgerIcon = document.querySelector('.burger-icon');
+
+function toggleMenu() {
+  navbarLinks.classList.toggle('active');
+  burgerIcon.classList.toggle('active');
+}
+
+
+function closeMenu() {
+  burgerIcon.classList.remove('active');
+  navbarLinks.classList.remove('active');
+}
+
+burgerIcon.addEventListener('click', toggleMenu);
+
+window.addEventListener('scroll', function() {
+  if (burgerIcon.classList.contains('active')) {
+    closeMenu();
+  }
+});
