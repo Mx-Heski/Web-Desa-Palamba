@@ -31,3 +31,12 @@ document.addEventListener('DOMContentLoaded', function () {
 document.querySelector('.toggle-link').addEventListener('click', function() {
   this.parentElement.classList.toggle('active');
 });
+
+const dropdownHeaders = document.querySelectorAll('.dropdown-header');
+
+dropdownHeaders.forEach ( header => {
+  header.addEventListener('click', function () {
+    const dropdownContent = this.nextElementSibling;
+    dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block'
+  })
+})
